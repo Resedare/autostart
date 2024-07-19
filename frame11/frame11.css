@@ -1,0 +1,238 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Общие стили */
+
+body {
+    font-family: "Inter", sans-serif;
+}
+:root {
+    --primary-color: #3B4672;
+    --secondary-color: #DBFF00;
+}
+.container {
+    width: 1840px;
+    margin: 0 auto;
+}
+
+/* Header  */
+.header {
+    padding-bottom: 30px;
+}
+.header__bar {
+    padding: 30px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.header__bar-logo {
+    max-width: 250px;
+    margin-bottom: 15px;
+}
+.logo {
+}
+.header__bar-catalog {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 190px;
+    height: 54px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+
+    font-size: 16px;
+    color: var(--primary-color);
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+}
+.header__bar-catalog--icon {
+    margin: 0 20px;
+}
+.header__bar-search-field {
+    display: flex;
+    height: 54px;
+    width: 740px;
+    border-radius: 30px;
+}
+.header__bar-search-field-left-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    border-radius: 30px 0 0 30px;
+
+    width: 110px;
+    background-color: var(--primary-color);
+    color: #D9D9D9;
+}
+.header__bar-search-bar {
+    width: 100%;
+    border: none;
+    background-color: #ECECEC;
+
+    border-radius: 0 30px 30px 0;
+    outline: none;
+    padding: 20px;
+
+    font-size: 16px;
+    font: inherit;
+}
+.header__bar-phone-box {
+    display: flex;
+    gap: 14px;
+
+    font-size: 22px;
+    font-weight: 500;
+
+    color: var(--primary-color);
+}
+.header__bar-phone-box--icon {
+}
+.header__bar-account {
+    display: flex;
+    gap: 14px;
+}
+.header__bar-account-icon {
+}
+.header__bar-account-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.header__bar-account-column p:first-child {
+    font-size: 10px;
+    color: #A9ADC1;
+}
+.header__bar-account-column p:last-child {
+    font-size: 16px;
+    color: #5D6279;
+    font-weight: 800;
+}
+.header__bar-cart {
+    display: flex;
+    gap: 14px;
+}
+.header__bar-cart-icon {
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    height: 61px;
+
+    border-bottom: 1px solid var(--primary-color);
+    border-top: 1px solid var(--primary-color);
+}
+.nav__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0 19px;
+    font-weight: 600;
+}
+.nav__link.active {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(59, 66, 114, 0.09);
+    color: #929292;
+    border-bottom: 6px solid var(--secondary-color);
+    padding-top: 6px;
+}
+
+/* Основная информация */
+
+.main {
+}
+.main__payments-and-delivery {
+}
+.main__payments {
+    padding-bottom: 170px;
+}
+.main__payments-title {
+    font-size: 48px;
+    color: var(--primary-color);
+    font-weight: normal;
+    margin-bottom: 46px;
+}
+.main__payments-blocks {
+    display: flex;
+    justify-content: center;
+    gap: 31px;
+}
+.main__payments-blocks-item {
+    width: 495px;
+    height: 262px;
+    background-color: #A4E5DC;
+    border-radius: 30px;
+    padding: 65px 53px;
+}
+.main__payments-blocks-item-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.main__payments-blocks-item-list {
+    margin-left: 20px;
+}
+.main__payments-blocks-item-list li {
+    font-size: 16px;
+    line-height: 24px;
+}
+.main__payments-blocks-item-description {
+    font-size: 16px;
+    line-height: 24px;
+}
+.main__payments-blocks-item-description span {
+    font-weight: 500;
+}
+.main__delivery {
+}
+.main__delivery-title {
+    font-size: 32px;
+    color: var(--primary-color);
+    font-weight: normal;
+    margin-bottom: 46px;
+}
+.main__delivery-info {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 70px;
+}
+.main__delivery-info-address {
+    margin-bottom: 20px;
+}
+.main__delivery-info-address span {
+    font-weight: 700;
+}
+.main__delivery-info-time {
+}
+.main__delivery-info-time span {
+    font-weight: 700;
+}
+.main__delivery-map {
+    pointer-events: none;
+}
+.main__delivery-contact {
+    font-size: 18px;
+    margin-top: 70px;
+    max-width: 650px;
+    margin-bottom: 20px;
+}
+.main__delivery-contact a {
+    color: #314BB3;
+}
+.main__delivery-contact-second {
+    font-size: 18px;
+    max-width: 680px;
+    padding-bottom: 30px;
+}
